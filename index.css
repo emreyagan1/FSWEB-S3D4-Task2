@@ -63,6 +63,27 @@ footer {
   background: gray;
 }
 
+@media(max-width:500px) {
+  body {
+    min-width: 300px;
+  }
+
+  .menu-items{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap:0;
+  }
+
+  .gallery-section img {
+    width: 45%;
+  }
+
+  .gallery-section img:nth-child(n + 5) {
+  display: none;
+}
+}
+
 /* css-1 responsive tasarım için maksimum genişlik 500px için media query yazalım.
 css-2 body tag'ini kullanarak sayfanın 300px'den küçük olmasını engelleyelim.
 css-3 menu-items class'ında navigasyon linklerinin sütun şeklinde alt alta dizilmesini, genişliklerinin eşit olması için esnemesini(stretch) ve aralarındaki boşluğun yok olmasını sağlayalım.
